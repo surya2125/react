@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import InputBox from "./components/InputBox";
 import useCurrencyInfoHooks from "./hooks/useCurrencyInfoHooks";
 
@@ -58,7 +58,7 @@ const App = () => {
               <InputBox
                 label="to"
                 currencyOptions={options}
-                amount={convertedAmount}
+                amount={Number(convertedAmount).toFixed(2)}
                 onCurrencyChange={(currency) => setTo(currency)}
                 selectedCurrency={to}
                 amountDisabled

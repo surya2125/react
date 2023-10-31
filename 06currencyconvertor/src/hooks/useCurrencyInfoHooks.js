@@ -10,7 +10,6 @@ function useCurrencyInfoHooks(currency = "usd") {
         `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`
       )
       .then((res) => {
-        console.log(res);
         setData((prevItems) => ({
           ...prevItems,
           currency: res.data[currency],
