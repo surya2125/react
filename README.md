@@ -29,3 +29,21 @@
 - useId
 - ### Projects
   - Currency Swap
+
+## 9. React Router Dom
+
+- useId
+- loader
+- outlet
+
+## 10. Context
+
+- Create Context
+- Context Provider
+- Wrap Context
+- useContext
+- Create and provide context in a single file
+
+## 11. Toggle theme
+
+- configure dark mode || light mode
